@@ -9,4 +9,4 @@ const fetchImage = ( query, page, perPage ) => {
   
   return fetch(url).then(res => res.json());
 }
-module.export = fetchImage;
+module.exports = fetchImage;

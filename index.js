@@ -16,3 +16,6 @@ app.get('/img', (req, res) => {
     .then(image => res.status(200).json(image))
     .catch(error => res.status(400).json({ message: error }));
  });
+app.listen(PORT, () => {
+  console.log(`Application server is running on port ${PORT}`);
+});
