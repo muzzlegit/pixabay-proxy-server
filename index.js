@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8888;
 app.use(cors('*'));
 
 app.get('/img', (req, res) => {
-  // const { query } = req.query;
+  const { query } = req.query;
 
   fetchImage( query )
     .then(image => res.status(200).json(image))
